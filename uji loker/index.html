@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Loker</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <!--topnav-->
+        <div class="topnav" id="myTopnav">
+            <!--logo-->
+            <h2>
+                <a href="index.html" style="float: left; padding-left: 20px;">LOGO</a>
+            </h2>
+
+            <!--menu-->
+            <a href="index.html">Utama</a>
+            <a href="#">Kenapa Kami</a>
+            <a href="#">Pasang iklan</a>
+            <a href="#">Tentang Kami</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+        </div>
+        <!--bg img + search-->
+            <div class="bgimg">
+                <form class="search" action="#">
+                    <input type="text" placeholder="Cari lowongan pekerjaan" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        <!--reason-->
+        <div class="container">
+            <div class="row">
+            <div class="col-container">
+                <div class="column">
+                    <div class="card">
+                        <h2>Aktual</h2>
+                        <p style="color: white;">....</p>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="card">
+                        <h2>Faktual</h2>
+                        <p style="color: white;">....</p>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="card">
+                        <h2>Komprehensif</h2>
+                        <p style="color: white;">....</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <!--find-->
+        <h1 style="text-align: center;">Cari Kerja</h1>
+        <div class="container" style="background-color: #f2f2f2;">
+            <h2>Bergabunglah bersama kami</h2>
+            <p>.....</p>
+            <button class="btn" type="button"> Pasang lowongan pekerjaan </button>
+        </div>
+
+        <!--new-->
+        <div class="container">
+            <div class="row">
+                <div class="col-container">
+                    <div class="column">
+                        <div class="card">
+                            <!--error img because the size is not same-->
+                            <img src="loker.jpg" alt="logo-perusahaaan">
+                            <h4><a href="detail.html">Marketing</a></h4>
+                            <p>PT. ABC</p>
+                            <ul>
+                                <li>Pendidikan   :</li>
+                                <li>Lokasi       :</li>
+                                <li>Waktu        :</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="card">
+                            <img src="no_image.png" alt="logo-perusahaaan" style="text-align: center;">
+                            <h4><a href="detail.html">Marketing</a></h4>
+                            <p>PT. ABC</p>
+                            <ul>
+                                <li>Pendidikan   :</li>
+                                <li>Lokasi       :</li>
+                                <li>Waktu        :</li>
+                            </ul>  
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="card">
+                            <img src="no_image.png" alt="logo-perusahaaan">
+                            <h4><a href="detail.html">Marketing</a></h4>
+                            <p>PT. ABC</p>
+                            <ul>
+                                <li>Pendidikan   :</li>
+                                <li>Lokasi       :</li>
+                                <li>Waktu        :</li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer>
+            <h2 class="flogo">
+                <a href="index.html">LOGO</a>
+            </h2>
+            <div>
+                <p class="ftitle">Alamat</p>
+                <p>Ringroad Utara,</p>
+                <p>Janti, Banguntapan</p>
+                <p>Bantul, Daerah Istimewa Yogyakarta</p>
+            </div>
+            <div>
+                <p class="ftitle">Media Sosial</p>
+                <a href="#">Twitter</a><br>
+                <a href="#">Youtube</a><br>
+                <a href="#">Instagram</a>
+              </div>
+              <div>
+                <p class="ftitle">Kontak</p>
+                <p>Phone : 0274 583028<br></p>
+                <p>Email : loker@gmail.com</p>
+              </div>
+              <div>
+                <p class="ftitle">Bantuan</p>
+                <p>Pasang Loker</p>
+                <p>Data Statistik</p>
+                <p>Kebijakan</p>
+              </div>
+        </footer>
+
+        <script>
+            //topnav
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+
+    </body>
+
+</html>
