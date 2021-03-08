@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D6EFC7 !important;
+    font-family: Arial !important;
+    color: rgba(24, 77, 71, 1) !important;
+}
+
+nav{
+    background-color: rgba(255, 255, 255, .2) !important;
+    padding: 14px;
+    border-color: transparent !important;
+}
+
+/*custom navbar*/
+.navbar-cus{
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 20px !important;
+    line-height: 1.42857143 !important;
+    border-radius: 0;
+    font-weight: 500 !important;
+}
+
+.navbar-cus a{
+    color : rgba(24, 77, 71, 1) !important;
+}
+
+/*header with bg image*/
+.bgimg-header{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/header.png) !important;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 25px;
+}
+
+.header{
+    padding-top: 80px;
+    padding-left: 120px;
+}
+
+.header h1{
+    font-weight: 1000;
+}
+
+/*custom button*/
+.btn-cus{
+    background-color:#FAD586 !important;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+.btn-cus2{
+    border-color:  rgba(24, 77, 71, 1) !important;
+    background-color: transparent !important;
+    font-size: 20pt;
+    font-weight: 400;
+}
+
+/*custom tag p*/
+p{
+    font-size: 18pt !important;
+}
+
+/*set the content web*/
+.content{
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.content h1{
+    font-weight: 1000;
+}
+
+/*column bg*/
+.bg-col{
+    background: rgba(0,0,0,.6);
+}
+
+/*custom footer*/
+footer{
+    text-align: center;
+    font-size: 12pt;
+    align-items: center;
+}
+
+/*custom bg content*/
+.bg-content{
+    width: 100%;
+    background-image: url(img/bg.png) !important;
+    background-position: left;
+    background-size: cover;
+}
+
+/*custom card*/
+.card-cus{
+    background-color: #F7F7E8;
+    text-align: justify;
+    font-size: 20pt;
+    align-items: center;
+    padding: 20px 17px;
+    border-radius: 10%;
+    margin: 5px;
+    justify-content: center;
+}
+
+.card-cus i{
+    margin: 5px 12px;
+}
+
+.card-cus p{
+    font-size: 15pt !important;
+}
+
+/* Small devices (portrait tablets and large phones until 600px) */
+@media only screen and (max-width: 600px) {
+    .row-cus{
+        padding: 0px !important;
+    }
+    .content .card{
+        width: 270px !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+  }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width:1440px){
+    .col-lg-6 .content{
+        padding: 50px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: justify !important;
+    }
+} 
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+   .col-lg-6 .content1{
+       padding-top: 50%;
+   }
+
+   .col-lg-6 .card{
+       left: 0 !important;
+       right: 0 !important;
+   }
+}
