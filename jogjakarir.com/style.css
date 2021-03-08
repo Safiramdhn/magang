@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+.btn-cus{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.input-cus{
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+}
