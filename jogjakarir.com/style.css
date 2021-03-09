@@ -15,3 +15,36 @@
 a{
     text-decoration: none;
 }
+
+/* Small devices (portrait tablets and large phones until 600px) */
+@media only screen and (max-width: 600px) {
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+    .row{
+        padding: 0px !important;
+    }
+    .col-1{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 991px) {
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+    .form-control{
+        width: 100% !important;
+    }
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+   .container{
+       max-width: 100%;
+   }
+}
