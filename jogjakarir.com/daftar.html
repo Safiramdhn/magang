@@ -15,43 +15,95 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="javascript:window.history.go(-1);">Kembali</a>
-                    <p> Back </p>
-                </a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img src="img/logo.png" alt="logo" width="100" class="d-inline-block align-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/carilowongan">Cari Pekerjaan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/lowonganbaru">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/carikandidat">Pricing</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="/masuk akun">Masuk Akun</a>
+                        </li>
+                    </ul>   
+                </div>    
+                <div class="justify-content-end">
+                    <a href="/loginPerusahaan.html">
+                        <button type="button" class="btn btn-outline-secondary">Perusahaan</button>
+                    </a>
+                </div>
             </div>
         </nav>
 
-        <img src="img/logo.png" class="rounded mx-auto d-block" alt="Logo">
-        <div class="row" style="padding: 12px 20px; margin: 0px;">
-            <div class="col">
-              <input type="text" class="form-control input-cus" placeholder="Nama Lengkap" aria-label="Nama Lengkap">
-              <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
-              <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
-              <input type="password" class="form-control input-cus" placeholder="Ulangi Password" aria-label="Ulangi Password">
+        <div class="card" style="padding: 20px 70px">
+            <div class="card-body" style="background-color: lightgray;">
+                <form style="padding-top: 25px;">
+                    <h1 style="text-align: center;">Kandidat Mendaftar</h1>
+                    <div class="row" style="padding: 20px 20px; margin: 0px;">
+                        <div class="col">
+                            <input type="text" class="form-control input-cus" placeholder="Nama Lengkap" aria-label="Nama depan">
+                            <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
+                            <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
+                            <input type="password" class="form-control input-cus" placeholder="Ulangi Password" aria-label="Ulangi Password">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control input-cus" placeholder="Nama Lengkap" aria-label="Nama belakang">
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-1 mx-auto">
+                        <button type="submit" class="btn btn-primary">Daftar</button>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <p>Dengan melanjutkan, Anda telah menyetujui Kebijakan Privasi dan Syarat & Ketentuan dari Jogjakarir.</p>
+                    </div>
+                </form>
+                <h3 style="text-align: center; padding-bottom: 20px;">Atau</h3>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="submit" class="btn btn-danger">Masuk Melalui google</button>
+                </div>
+                <div class="d-grid gap-2 col-4 mx-auto" style="padding: 10px;">
+                    <p style="text-align: center;">Sudah punya akun? <a href="login.html">Silahkan masuk!</a></p>
+                </div>
             </div>
-            <div class="col">
-                <select id="inputJobs" class="form-select">
-                    <option selected>Pilih sebagai ...</option>
-                    <option>Programmer</option>
-                    <option>Data Analys</option>
-                    <option>Graphic Designer</option>
-                    <option>Resource and Develop</option>
-                    <option>UI/UX Designer</option>
-                    <option>Photografer</option>
-                    <option>Videografer</option>
-                  </select>
-            </div>
-        </div>
-        <div class="d-grid gap-2 col-1 mx-auto">
-            <button type="submit" class="btn btn-primary">Daftar</button>
         </div>
 
-        <footer class="fix-bottom" style="margin-top: 20px;">
-            <div class="d-grid gap-2 col-4 mx-auto">
-                <p style="text-align: center;">Sudah punya akun?<a href="login.html">Masuk disini!</a></p>
-              </div>
-          </footer>
+        <footer>
+            <div class="row" style="margin: 0px;">
+                <div class="col-lg-2">
+                    <a class="navbar-brand" href="/index.html"><img src="img/logo.png" alt="logo" width="100" class="d-inline-block align-top"></a>
+                </div>
+                <div class="col-lg-5">
+                    <p style="padding-top: 9px;">©2021 jogjakarir. All rights reserved</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="justify-content-end">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/carilowongan">Cari Pekerjaan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/lowonganbaru">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/carikandidat">Pricing</a>
+                            </li> 
+                            <li class="nav-item">
+                                <a class="nav-link" href="/masuk akun">Masuk Akun</a>
+                            </li>   
+                        </ul>   
+                    </div>
+                </div>
+            </div> 
+        </footer>
     </body>
 </html>
