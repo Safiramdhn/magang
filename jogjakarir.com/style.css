@@ -26,6 +26,10 @@ a{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -44,4 +48,8 @@ a{
    .container{
        max-width: 100%;
    }
+   .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
 }
