@@ -2,19 +2,16 @@
     box-sizing: border-box;
 }
 
-.btn-cus{
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
 .input-cus{
     margin-bottom: 30px;
 }
 
 a{
-    text-decoration: none;
+    
+    color:black !important;
 }
+
+
 
 /* Small devices (portrait tablets and large phones until 600px) */
 @media only screen and (max-width: 600px) {
