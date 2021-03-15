@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*custom input*/
 .input-cus{
     margin-bottom: 30px;
 }
@@ -19,9 +20,54 @@ span{
     padding: 10px;
 }
 
-/* Small devices (portrait tablets and large phones until 600px) */
-@media only screen and (max-width: 600px) {
-    .col-lg-2{
+/*overide bootstrap .nav-item*/
+.nav-item{
+    padding-left: 30px;
+}
+
+/*overide bootstrap .container-fluid*/
+.container-fluid{
+    padding: 0px 20px;
+}
+
+/*overide and custom bootstrap .card*/
+.card{
+    border: none;
+}
+
+ 
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 319px) and (max-width: 576px) {
+    .card{
+        padding: 10px 10px !important;
+    }
+
+    .justify-content-end{
+        justify-content: flex-start !important;
+    }
+    
+    .fnav-item{
+        padding: 0px;
+    }
+
+    p{
+        padding: 8px 11px !important;
+    }
+
+    .col-4{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .col-10{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 577px) and (max-width: 991px){
+    .col-10{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
@@ -36,20 +82,9 @@ span{
     h4{
         font-size: 10pt;
     }
-
+    
     .card{
-        background-color: lightgray;
-    }
-    
-    
-    
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (max-width: 991px) {
-    .col-lg-2{
-        flex: 0 0 auto !important;
-        width: 100% !important;
+        padding: 20px 100px !important;
     }
     .form-control{
         width: 100% !important;
@@ -59,18 +94,112 @@ span{
         width: 100% !important;
     }
 
-    .card{
-        padding: 20px 100px !important;
+    .justify-content-end{
+        justify-content: flex-start !important;
+    }
+
+    .fnav-item{
+        padding: 0px !important;
+    }
+    
+    .nav-link{
+        padding-left: 12px !important;
+    }
+    
+    p{
+        padding: 8px 11px !important;
+    }
+    
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+
+    .col-lg-4{
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+    .col-lg-6{
+        flex: 0 0 auto !important;
+        width: auto !important;
     }
 }
- 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1440px) {
-   .container{
-       max-width: 100%;
-   }
-   .col-lg-2{
-    flex: 0 0 auto !important;
-    width: 100% !important;
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px){
+    p{
+        padding: 8px 10px !important;
+    }
+
+    .justify-content-end{
+        justify-content: flex-start !important;
+    }
+    
+    .nav-link{
+        padding: 8px 10px !important;
+    }
+
+    .fnav-item{
+        padding-left: 0px;
+    }
+    
+    .card{
+        padding: 20px 200px !important;
+    }
+
+    .col-sm-6{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
 }
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1440px) { 
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 33.33% !important;
+    }
+    
+    .col-lg-4{
+        flex: 0 0 auto !important;
+        width: 33.33% !important;
+    }
+    .col-lg-6{
+        flex: 0 0 auto !important;
+        width: 33.33% !important;
+    }
+
+    .card{
+        padding: 20px 300px !important;
+    }
+
+    .justify-content-end{
+        justify-content: flex-end !important;
+    }
+    
+    .row{
+        padding: 0px !important;
+    }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1441px) and (max-width: 3000px){
+    .card{
+        padding: 20px 800px !important;
+    }
+    
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+    
+    .col-lg-6{
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+    .container{
+        max-width: 100% !important;
+        margin: 0px 30px !important;
+    }
+    
 }
