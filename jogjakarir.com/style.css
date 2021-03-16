@@ -50,16 +50,12 @@ span{
         padding: 0px;
     }
 
-    p{
-        padding: 8px 11px !important;
-    }
-
-    .col-4{
+    .col-5{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
 
-    .col-10{
+    .col-11{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
@@ -67,7 +63,7 @@ span{
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 577px) and (max-width: 991px){
-    .col-10{
+    .col-11{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
@@ -89,7 +85,7 @@ span{
     .form-control{
         width: 100% !important;
     }
-    .col-4 { 
+    .col-5 { 
         flex: 0 0 auto !important;
         width: 100% !important;
     }
@@ -104,10 +100,6 @@ span{
     
     .nav-link{
         padding-left: 12px !important;
-    }
-    
-    p{
-        padding: 8px 11px !important;
     }
     
     .col-lg-2{
@@ -199,7 +191,12 @@ span{
     }
     .container{
         max-width: 100% !important;
-        margin: 0px 30px !important;
+        margin: 0px !important;
+    }
+    .col-lg-4{
+        flex: 0 0 auto !important;
+        width: 33.33% !important;
     }
     
 }
+
