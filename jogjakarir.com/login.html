@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4fd193de95.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4fd193de95.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img\icon.png" type="image/x-icon"/>
 
-    <title>Masuk - jogjakarir.com</title>
+        <title>Masuk - jogjakarir.com</title>
 
-</head>
+    </head>
 
-<body>
+    <body>
     <!--navbar-->
-    <div class="container">
-        <div class="row" style="margin: 0px;">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="/index.html">Logo</a>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="img/logo-color.png"  alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,88 +40,96 @@
                             <a class="nav-link" href="/carikandidat">Cari Kandidat</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-secondary d-flex" type="button">Perusahaan</button>
+                    <a href="#"><button class="btn btn-outline-secondary d-flex" type="button">Perusahaan</button></a>
                 </div>
             </nav>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="card">
-            <div class="card-body" style="background-color: lightgray;">
-                <form style="padding-top: 50px;">
-                    <!--form login-->
-                    <h2 style="text-align: center;">Selamat Datang Kembali!</h2>
-                    <br>
-                    <div class="d-grid gap-2 col-10 mx-auto">
-                        <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
-                        <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
-                    </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body" style="background-color: lightgray;">
+                    <form style="padding-top: 50px;">
+                        <!--form login-->
+                        <h2 style="text-align: center;">Selamat Datang Kembali!</h2>
+                        <br>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
+                            <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
+                        </div>
 
-                    <div class="d-grid gap-2 col-10 mx-auto">
-                        <button type="submit" class="btn btn-secondary">Masuk</button>
-                    </div>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <button type="submit" class="btn btn-secondary" style="background-color: #607EED;">Masuk</button>
+                        </div>
 
-                    <div class="d-grid gap-2 col-10 mx-auto">
-                        <p style="text-align: center;">Lupa password? <a href="#">Reset disini</a></p>
-                    </div>
-                    <!--alternatif login-->
-                    <span>Atau</span>
-                    <div class="d-grid gap-2 col-10 mx-auto">
-                        <button type="submit" class="btn btn-danger">
-                            <i class="fab fa-google-plus" style="font-size: 15pt;"></i> Masuk Melalui google
-                        </button>
-                    </div>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <p style="text-align: center;">Lupa password? <a href="#">Reset disini</a></p>
+                        </div>
+                        
+                        <!--alternatif login-->
+                        <span>Atau</span>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fab fa-google-plus" style="font-size: 15pt;"></i> Masuk Melalui google
+                            </button>
+                        </div>
 
-                    <div class="d-grid gap-2 col-10 mx-auto" style="padding: 10px;">
-                        <p style="text-align: center;">Belum punya akun? <a href="daftar.html">Daftar disini!</a></p>
-                    </div>
-                </form>
+                        <div class="d-grid gap-2 col-10 mx-auto" style="padding: 10px;">
+                            <p style="text-align: center;">Belum punya akun? <a href="daftar.html">Daftar disini!</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
-    <footer style="background-color: lightgray;">
-        <div class="container"">
-            <div class=" row" style="margin: 0px;">
-                <!--footer navigation-->
-                <div class="col-lg-4">
-                    <h3>Jogjakarir</h3>
-                    <a href="#" style="color: gray !important; text-decoration: none;">Beranda</a><br>
-                    <a href="#" style="color: gray !important; text-decoration: none;">Ketentuan Privasi</a><br>
-                    <a href="#" style="color: gray !important; text-decoration: none;">Tentang Kami</a><br>
-                    <a href="#" style="color: gray !important; text-decoration: none;">Kontak</a><br>
-                </div>
-
-                <!--sosmed-->
-                <div class="col-lg-4">
-                    <h3>Sosial Media</h3>
-                    <div style="font-size: 25pt;">
-                        <a href="#" style="padding-right: 10px;"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#" style="padding-right: 10px;"><i class="fab fa-github-square"></i></a>
-                        <a href="#" style="padding-right: 10px;"><i class="fab fa-google-plus-square"></i></a>
-                        <a href="#" style="padding-right: 10px;"><i class="fab fa-linkedin"></i></a>
+        <div style="background-color: #607EED;">
+            <div class="container" style="padding: 30px 0px 30px 0px;">
+                <div class=" row" style="margin: 0px; color: white">
+                    <!--footer navigation-->
+                    <div class="col-lg-4">
+                        <h3>Jogjakarir</h3>
+                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Beranda</a><br>
+                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Ketentuan Privasi</a><br>
+                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Tentang Kami</a><br>
+                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Kontak</a><br>
                     </div>
-                </div>
-
-                <!--about-->
-                <div class="col-lg-4">
-                    <img src="img/logo.png" alt="logo">
-                    <p style="color: gray;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin augue sed
-                        sit bibendum egestas lectus purus egestas. Tempus quam tristique sed montes. Eget ullamcorper
-                        egestas malesuada fusce tristique ut. Suscipit commodo fames arcu malesuada. In bibendum.</p>
-                    <div class="row" style="margin: 0px;">
+                    
+                    <!--sosmed-->
+                    <div class="col-lg-4">
+                        <h3>Sosial Media</h3>
+                        <div style="font-size: 25pt;">
+                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-github-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-google-plus-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                
+                    <!--about-->
+                    <div class="col-lg-4">
+                        <img src="img/logo.png" alt="logo">
+                        <p style="color: #D6D5E9; padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin augue sed
+                            sit bibendum egestas lectus purus egestas. Tempus quam tristique sed montes. Eget ullamcorper
+                            egestas malesuada fusce tristique ut. Suscipit commodo fames arcu malesuada. In bibendum.
+                        </p>
+                        
+                        <div class="row" style="margin: 0px;">
                             <div class="col-sm-6">
-                                <img src="img/gplay.png" alt="Google Play Store">
+                                <a href="#"><img src="img/gplay.png" alt="Google Play Store"></a>
                             </div>
                             <div class="col-sm-6">
-                                <img src="img/appstore.png" alt="App Store">
+                                <a href="#"><img src="img/appstore.png" alt="App Store"></a>
                             </div>
                         </div>
                     </div>
-                    <h5 style="text-align: center; padding-top: 20px;">Jogjakarir All Rights Reserved</h5>
                 </div>
             </div>
+        </div>
+        
+        <footer style="background-color: #3B63CD; margin: 0px;">
+            <h4 style="text-align: center; padding: 20px 0px 20px 0px; margin: 0px;">
+                Jogjakarir <span style="color: #A5B2C2; display: contents;"> All Rights Reserved </span>
+            </h4>
         </footer>
+
     </body>
 </html>
