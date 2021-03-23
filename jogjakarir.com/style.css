@@ -35,15 +35,69 @@ span{
     border: none;
 }
 
- 
+footer{
+    background-color: #607EED;
+    color: white;
+}
+
+form input{
+    border-color: #A5B2C2 !important;
+}
+
+.row{
+    margin: 0px !important;
+}
+
+select{
+    border: none !important;
+}
+
+.bg-header{
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg-header.png) !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.loker-card{
+    padding: 5px 0px !important;
+}
+
+.btn-cus{
+    background-color: #607EED !important;
+    margin: 12px !important;
+}
+
+.dropdown-menu[data-bs-popper]{
+    left: auto !important;
+    right: 5px !important;
+    background: rgba(214, 213, 233, 0.35);
+
+}
+
+.img-cus{
+    width: 160px;
+    height: 80px;
+}
+
+.img-cus2{
+    width: 80px;
+    height: 80px;
+}
+
+.card-cus{
+    margin-top: -100px;
+}
+
+.rigthnav-cus{
+    color: white !important;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 319px) and (max-width: 576px) {
     .card{
-        padding: 10px 10px !important;
-    }
-
-    .justify-content-end{
-        justify-content: flex-start !important;
+        padding: 10px 10px;
     }
     
     .fnav-item{
@@ -55,24 +109,47 @@ span{
         width: 100% !important;
     }
 
-    .col-11{
+    .col-10{
         flex: 0 0 auto !important;
         width: 100% !important;
+    }
+
+    .col-6{
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .container-cus{
+        margin: 150px 0px !important;
+    }
+
+    .rigthnav-cus{
+        color: black !important;
+    }
+    
+    .btnnav{
+        color: black !important;
+        border-color: black !important;
+    }
+
+    .img-cus{
+        height: 80px !important;
+    }
+    
+    .img-cus2{
+        width: 80px !important;
+        height: 80px !important;
     }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 577px) and (max-width: 991px){
-    .col-11{
+    .col-10{
         flex: 0 0 auto !important;
         width: 100% !important;
     }
     .row{
         padding: 0px !important;
-    }
-    .col-1{
-        flex: 0 0 auto !important;
-        width: 100% !important;
     }
 
     h4{
@@ -80,18 +157,14 @@ span{
     }
     
     .card{
-        padding: 20px 100px !important;
+        padding: 20px 100px;
     }
     .form-control{
-        width: 100% !important;
+        width: 100%;
     }
     .col-5 { 
         flex: 0 0 auto !important;
         width: 100% !important;
-    }
-
-    .justify-content-end{
-        justify-content: flex-start !important;
     }
 
     .fnav-item{
@@ -104,7 +177,7 @@ span{
     
     .col-lg-2{
         flex: 0 0 auto !important;
-        width: auto !important;
+        width: 50% !important;
     }
 
     .col-lg-4{
@@ -115,16 +188,31 @@ span{
         flex: 0 0 auto !important;
         width: auto !important;
     }
+
+    .rigthnav-cus{
+        color: black !important;
+    }
+    
+    .btnnav{
+        color: black !important;
+        border-color: black !important;
+    }
+
+    .img-cus{
+        width: 160px;
+        height: 80px;
+    }
+    
+    .img-cus2{
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px){
     p{
         padding: 8px 10px !important;
-    }
-
-    .justify-content-end{
-        justify-content: flex-start !important;
     }
     
     .nav-link{
@@ -136,12 +224,32 @@ span{
     }
     
     .card{
-        padding: 20px 200px !important;
+        padding: 20px 200px;
     }
 
     .col-sm-6{
         flex: 0 0 auto !important;
         width: 100% !important;
+    }
+
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+
+    .col-md-8{
+        flex: 0 0 auto;
+        width: 60% !important;
+    }
+
+    .img-cus{
+        width: 160px;
+        height: 80px;
+    }
+    
+    .img-cus2{
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -162,11 +270,7 @@ span{
     }
 
     .card{
-        padding: 20px 300px !important;
-    }
-
-    .justify-content-end{
-        justify-content: flex-end !important;
+        padding: 20px 300px;
     }
     
     .row{
@@ -177,7 +281,7 @@ span{
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1441px) and (max-width: 3000px){
     .card{
-        padding: 20px 800px !important;
+        padding: 20px 800px;
     }
     
     .col-lg-2{
@@ -191,12 +295,20 @@ span{
     }
     .container{
         max-width: 100% !important;
-        margin: 0px !important;
+        margin : 0px !important;
+    }
+
+    .container .navbar{
+        padding: 0px 10px;
     }
     .col-lg-4{
         flex: 0 0 auto !important;
         width: 33.33% !important;
     }
     
+    .col-lg-2{
+        flex: 0 0 auto !important;
+        width: 33.33% !important;
+    }
 }
 
