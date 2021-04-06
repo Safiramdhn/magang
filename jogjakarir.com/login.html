@@ -5,14 +5,16 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-        </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/4fd193de95.js" crossorigin="anonymous"></script>
         <link rel="icon" href="img\icon.png" type="image/x-icon"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <title>Masuk - jogjakarir.com</title>
 
@@ -40,83 +42,92 @@
                             <a class="nav-link" href="/carikandidat">Cari Kandidat</a>
                         </li>
                     </ul>
-                    <a href="#"><button class="btn btn-outline-secondary d-flex" type="button">Perusahaan</button></a>
+                    <a href="#"><button class="btn btn-outline-dark btnnav" type="button">Perusahaan</button></a>
                 </div>
             </nav>
         </div>
 
-        <div class="container">
-            <div class="card">
-                <div class="card-body" style="background-color: lightgray;">
+        <div style="background: #F2F2F2;">
+            <div class="card" style="background: #F2F2F2;">
+                <div class="card-body" style="background: #fff;">
                     <form style="padding-top: 50px;">
                         <!--form login-->
-                        <h2 style="text-align: center;">Selamat Datang Kembali!</h2>
-                        <br>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <h2>Selamat Datang Kembali!</h2>
+                        </div>
                         <div class="d-grid gap-2 col-10 mx-auto">
                             <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
                             <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
                         </div>
 
                         <div class="d-grid gap-2 col-10 mx-auto">
-                            <button type="submit" class="btn btn-secondary" style="background-color: #607EED;">Masuk</button>
+                            <button type="submit" class="btn btn-secondary" style="background-color: #528FFF;">Masuk</button>
                         </div>
 
                         <div class="d-grid gap-2 col-10 mx-auto">
-                            <p style="text-align: center;">Lupa password? <a href="#">Reset disini</a></p>
+                            <p>Lupa password?
+                                 <a href="#" 
+                                    style="text-decoration: none; color: #808D9D !important;">Reset disini
+                                </a>
+                            </p>
                         </div>
                         
                         <!--alternatif login-->
-                        <span>Atau</span>
+                        <span style="color: #A5B2C2;">Atau</span>
                         <div class="d-grid gap-2 col-10 mx-auto">
-                            <button type="submit" class="btn btn-danger">
+                            <button type="submit" class="btn btn-danger" style="background: #E75062;">
                                 <i class="fab fa-google-plus" style="font-size: 15pt;"></i> Masuk Melalui google
                             </button>
                         </div>
 
-                        <div class="d-grid gap-2 col-10 mx-auto" style="padding: 10px;">
-                            <p style="text-align: center;">Belum punya akun? <a href="daftar.html">Daftar disini!</a></p>
+                        <div class="d-grid gap-2 col-10 mx-auto">
+                            <p>Belum punya akun?
+                                <a href="daftar.html" 
+                                    style="text-decoration: none; color: #808D9D !important;">Daftar disini!
+                                </a>
+                            </p>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
 
-        <div style="background-color: #607EED;">
+        <div style="background: linear-gradient(147.76deg, #7DABFF 16.98%, #528FFF 82.47%);">
             <div class="container" style="padding: 30px 0px 30px 0px;">
                 <div class=" row" style="margin: 0px; color: white">
                     <!--footer navigation-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-4-cus mb-3">
                         <h3>Jogjakarir</h3>
-                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Beranda</a><br>
-                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Ketentuan Privasi</a><br>
-                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Tentang Kami</a><br>
-                        <a href="#" style="padding-top: 10px; color: #D6D5E9 !important;text-decoration: none;">Kontak</a><br>
+                        <a href="#" style="padding-top: 10px; color: #E9E8FF !important;text-decoration: none;">Beranda</a><br>
+                        <a href="#" style="padding-top: 10px; color: #E9E8FF !important;text-decoration: none;">Ketentuan Privasi</a><br>
+                        <a href="#" style="padding-top: 10px; color: #E9E8FF !important;text-decoration: none;">Tentang Kami</a><br>
+                        <a href="#" style="padding-top: 10px; color: #E9E8FF !important;text-decoration: none;">Kontak</a><br>
                     </div>
                     
                     <!--sosmed-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-4-cus mb-3">
                         <h3>Sosial Media</h3>
                         <div style="font-size: 25pt;">
-                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-github-square"></i></a>
-                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-google-plus-square"></i></a>
-                            <a href="#" style="padding-right: 10px; color: #D6D5E9 !important;"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #E9E8FF !important;"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #E9E8FF !important;"><i class="fab fa-github-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #E9E8FF !important;"><i class="fab fa-google-plus-square"></i></a>
+                            <a href="#" style="padding-right: 10px; color: #E9E8FF !important;"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 
                     <!--about-->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 mb-3">
                         <img src="img/logo.png" alt="logo">
-                        <p style="color: #D6D5E9; padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin augue sed
+                        <p style="color: #E9E8FF; padding-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin augue sed
                             sit bibendum egestas lectus purus egestas. Tempus quam tristique sed montes. Eget ullamcorper
                             egestas malesuada fusce tristique ut. Suscipit commodo fames arcu malesuada. In bibendum.
                         </p>
                         
                         <div class="row" style="margin: 0px;">
-                            <div class="col-sm-6">
+                            <div class="d-grid gap-2 col-sm-6 mx-auto mb-3">
                                 <a href="#"><img src="img/gplay.png" alt="Google Play Store"></a>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="d-grid gap-2 col-sm-6 mx-auto mb-3">
                                 <a href="#"><img src="img/appstore.png" alt="App Store"></a>
                             </div>
                         </div>
@@ -125,9 +136,9 @@
             </div>
         </div>
         
-        <footer style="background-color: #3B63CD; margin: 0px;">
+        <footer style="background-color: #4A81E7; margin: 0px;">
             <h4 style="text-align: center; padding: 20px 0px 20px 0px; margin: 0px;">
-                Jogjakarir <span style="color: #A5B2C2; display: contents;"> All Rights Reserved </span>
+                Jogjakarir <span style="color: #D6D5E9; display: contents;"> All Rights Reserved </span>
             </h4>
         </footer>
 
