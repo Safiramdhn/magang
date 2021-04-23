@@ -64,7 +64,7 @@
         </div>
 
         <div class="container mx-auto mt-5">
-          <form style="padding-top: 20px;" class="was-validated">
+          <form style="padding-top: 20px;" class="needs-validation" novalidate>
             <div id="progress1" data-bs-spy="scroll" data-bs-target="#prev">
               <h3 class="d-flex justify-content-center mt-5" style="text-align:center; font-weight: bold;">Pasang lowongan dan temukan <br> kandidat terbaik</h3>
               <div class="row d-flex justify-content-center">
@@ -295,11 +295,38 @@
                 }
             });
 
-          $('.done').on('click', function(event) {
-            event.preventDefault(); 
-            var url = $(this).data('target');
-            location.replace(url);
-          });
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+          function validateForm() {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+          }
+
+          if(validateForm()===true){
+            $('.done').on('click', function(event) {
+              event.preventDefault(); 
+              var url = $(this).data('target');
+              location.replace(url);
+            });
+          }else if(validateForm()===false){
+            $('.done').on('click', function(event) {
+              alert("Silahkan cek kembali form sebelumnya");
+            });
+          };
         </script>
     </body>
 </html>
