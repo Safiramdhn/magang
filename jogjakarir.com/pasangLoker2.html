@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style-company.css">
+        <link rel="icon" href="img\icon.png" type="image/x-icon"/>
+        <script src="https://kit.fontawesome.com/4fd193de95.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+        <title>Pasang Lowongan - jogjakarir.com</title>
+    </head>
+
+    <body style="background: #F2F2F2;">
+        <!--navbar-->
+        <div style="background: white;" class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="home-company.html"><img src="img/logo-color.png"  alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--navbar menus-->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Produk & Layanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Harga & Paket</a>
+                            </li>
+                        </ul>
+                    
+                        <div>
+                          <ul class="navbar-nav">    
+                            <li class="nav-item dropdown">
+                              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dewi Safira Ramadhani 
+                                <span>Seven Inc.</span>
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item d-flex" href="#">Lihat Profil</a></li>
+                                <li><a class="dropdown-item d-flex" href="index.html">Keluar</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-dark"><i class="far fa-bell" style="font-size: 20pt;"></i></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-5">
+          <form style="padding-top: 20px;" class="was-validated">
+            <div id="progress1" data-bs-spy="scroll" data-bs-target="#prev">
+              <h3 class="d-flex justify-content-center mt-5" style="text-align:center; font-weight: bold;">Pasang lowongan dan temukan <br> kandidat terbaik</h3>
+              <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9">
+                  <ul id="progressbar" class="text-center">
+                  <li class="active step0" id="step1">Unggah <br> Lowongan</li>
+                  <li class="step0" id="step2">Deskripsi <br> Pekerjaan</li>
+                  <li class="step0" id="step3">Selesai</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card card-upload">
+              <div class="card-body" style="background: #fff;">
+                <div class="row">
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-left: auto;">
+                    <label for="posisi" class="form-label">Posisi Pekerjaan<span style="color: red; display: contents;">*</span></label>
+                    <input type="text" id="posisi" class="form-control" placeholder="Posisi pekerjaan" required>
+                  </div>
+                    
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-right: auto;">
+                    <label for="perusahaan" class="form-label">Perusahaan</label>
+                    <input type="text" id="perusahaan" class="form-control" placeholder="Sesuai dengan profil" value="Seven Inc." required>
+                  </div>
+                  
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-left: auto;" id="select1">
+                    <label for="pendidikan" class="form-label">Pendidikan Terakhir<span style="color: red; display: contents;">*</span></label>
+                    <select class="form-select" id="pendidikan" multiple="multiple" required>                    
+                      <option value="1">Umum</option>
+                      <option value="2">SMP</option>
+                      <option value="3">SMA</option>
+                      <option value="4">D3/S1</option>
+                      <option value="5">S2</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Silahkan pilih pendidikan terakhir
+                    </div>
+                  </div>
+                  
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-right: auto;">
+                    <label for="tipe" class="form-label">Tipe Pekerjaan<span style="color: red; display: contents;">*</span></label>
+                    <select class="form-select" id="tipe" multiple="multiple" required>
+                      <option value="1">Penuh waktu</option>
+                      <option value="2">Paruh waktu</option>
+                      <option value="3">Pekerjaan lepas</option>
+                      <option value="4">Magang</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Silahkan pilih tipe pekerjaan
+                    </div>
+                  </div>
+                  
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-left: auto;">
+                    <label for="lokasi" class="form-label">Lokasi Pekerjaan<span style="color: red; display: contents;">*</span></label>
+                    <select class="form-select input-cus mb-3" id="lokasi" multiple="multiple" required>
+                      <option value="1">Yogyakarta</option>
+                      <option value="2">Sleman</option>
+                      <option value="3">Bantul</option>
+                      <option value="4">Kulon Progo</option>
+                      <option value="5">Gunung Kidul</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Silahkan pilih lokasi pekerjaan
+                    </div>
+                  </div>
+                  
+                  <div class="d-grid gap-2 col-5 mb-4" style="margin-right: auto;">
+                    <label for="kategori" class="form-label">Kategori Pekerjaan<span style="color: red; display: contents;">*</span></label>
+                    <select class="form-select input-cus mb-3" id="kategori" multiple="multiple" required style="height: 100px;">
+                      <option value="1">Semua kategori pekerjaan</option>
+                      <option value="2">Akuntansi / Keuangan</option>
+                      <option value="3">Sumber daya manusia / Personalia</option>
+                      <option value="4">Penjualan / Pemasaran</option>
+                      <option value="5">Semua kategori pekerjaan</option>
+                      <option value="6">Akuntansi / Keuangan</option>
+                      <option value="7">Sumber daya manusia / Personalia</option>
+                      <option value="8">Penjualan / Pemasaran</option>
+                      <option value="9">Seni / Media / Komunikasi</option>
+                      <option value="10">Pelayanan</option>
+                      <option value="11">Pendidikan / Pelatihan</option>
+                      <option value="12">Komputer / Teknologi</option>
+                      <option value="13">Teknik</option>
+                      <option value="14">Manufaktur</option>
+                      <option value="15">Bangunan / Kontruksi</option>
+                      <option value="16">Sains</option>
+                      <option value="17">Layanan kesehatan</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Silahkan pilih kategori pekerjaan
+                    </div>
+                  </div>
+                  
+                  <div class="d-grid gap-2 col-10 mx-auto mb-4">
+                    <label for="gajimin gajimax" class="form-label">Kisaran Gaji<span style="color: red; display: contents;">*</span></label>
+                    <div class="row">
+                      <input type="number" min="1000000" max="999999999" id="gaji" class="form-control input-cus2" placeholder="Rp xxx.xxx.xxx" required>
+                      <div class="col-sm-2" style="padding-top: 7px; font-size: 16pt;">
+                        <span style="color: #D6D5E9; display: contents;">/ Bulan</span>
+                      </div>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="hidegaji" onclick="hideGaji()">
+                      <label class="form-check-label" for="hidegaji">
+                        Sembunyikan gaji
+                      </label>
+                    </div>
+                  </div>
+  
+                    <div class="d-grid gap-2 col-10 mx-auto">
+                    <label for="tgl" class="form-label">Batas Waktu Apply<span style="color: red; display: contents;">*</span></label>
+                    <div class="d-grid gap-2 col-5">
+                      <input type="date" id="tgl" class="form-control input-cus2" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="d-flex justify-content-end mt-5">
+              <a href="#progress2">
+                <button class="btn btn-primary btn-cus next" id="next" type="button">Selanjutnya</button>
+              </a>
+            </div>
+          </div>
+
+          <div id="progress2" data-bs-spy="scroll" data-bs-target="#next" style="margin-top: 500px;">
+            <h3 class="d-flex justify-content-center mt-5" style="text-align:center; font-weight: bold;">Pasang lowongan dan temukan <br> kandidat terbaik</h3>
+            <div class="row d-flex justify-content-center">
+              <div class="col-xl-7 col-lg-8 col-md-9">
+                <ul id="progressbar" class="text-center">
+                  <li class="active step0" id="step1"">Unggah <br> Lowongan</li>
+                    <li class="active step0" id="step2">Deskripsi <br> Pekerjaan</li>
+                    <li class="step0" id="step3">Selesai</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card card-upload">
+              <div class="card-body" style="background: #fff;">
+                  <div class="row">
+                    <div class="d-grid gap-2 col-10 mx-auto mb-4">
+                      <label for="deskripsi" class="form-label">Deskripsi Pekerjaan</label>
+                      <div id="desc-container"></div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="d-flex justify-content-start mt-5">
+                    <a href="#progress1">
+                      <button class="btn btn-outline-primary before" id="prev" type="button">Kembali</button>
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="col-lg-6">
+                  <div class="d-flex justify-content-end mt-5">
+                      <button class="btn btn-primary btn-cus done" type="submit" data-target="done.html">Unggah</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <script>
+            //multiselect
+            $(document).ready(function() {
+              $('#pendidikan').multiselect()
+            });
+    
+            $(document).ready(function() {
+              $('#tipe').multiselect()
+            });
+    
+            $(document).ready(function() {
+              $('#lokasi').multiselect()
+            });
+    
+            $(document).ready(function() {
+              $('#kategori').multiselect()
+            });
+    
+            //gaji dirahasiakan
+            function hideGaji() {
+              var x = document.getElementById("gaji");
+    
+              if (x.type === "number") {
+                x.type = "password";
+              } else {
+                x.type = "number";
+              }
+            }
+
+            //text area
+            var quill = new Quill('#desc-container', {
+              modules: {
+              toolbar: [
+                ['bold', 'italic', 'underline'],
+                [{ 'list': 'bullet' }]
+              ]
+            },
+            placeholder: 'Tulis deskripsi pekerjaan',
+            theme: 'snow'  // or 'bubble'
+          });
+
+            //keyboard shortcut
+            quill.keyboard.addBinding({
+                key: 'B',
+                shortKey: true,
+                handler: function(range, context) {
+
+                }
+            });
+
+            quill.keyboard.addBinding({
+                key: 'I',
+                shortKey: true,
+                handler: function(range, context) {
+            
+                }
+            });
+
+            quill.keyboard.addBinding({
+                key: 'U',
+                shortKey: true,
+                handler: function(range, context) {
+            
+                }
+            });
+
+          $('.done').on('click', function(event) {
+            event.preventDefault(); 
+            var url = $(this).data('target');
+            location.replace(url);
+          });
+        </script>
+    </body>
+</html>
