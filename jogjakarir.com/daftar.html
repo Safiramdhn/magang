@@ -42,7 +42,7 @@
                             <a class="nav-link" href="#">Cari Kandidat</a>
                         </li>
                     </ul>
-                    <a href="#"><button class="btn btn-outline-dark btnnav" type="button">Perusahaan</button></a>
+                    <a href="home-company.html"><button class="btn btn-outline-dark btnnav" type="button">Perusahaan</button></a>
                 </div>
             </nav>
         </div>
@@ -52,21 +52,21 @@
             <div class="card" style="background: #F2F2F2;">
                 <div class="card-body" style="background: #fff;">
                     <form style="padding-top: 20px;">
-                        <div class="row" style="margin: 0px;">
+                        <div class="row">
                             <div class="d-grid gap-2 col-10 mx-auto" style="padding: 0px 12px;">
                                 <h2>Kandidat Mendaftar</h2>
                             </div>
                             <div class="d-grid gap-2 col-5" style="margin-left: auto;">
-                                <input type="text" class="form-control input-cus" placeholder="Nama Depan" aria-label="Nama depan">
+                                <input type="text" class="form-control input-cus" id="namaDepan" placeholder="Nama Depan" aria-label="Nama depan">
                             </div>
                             <div class="d-grid gap-2 col-5" style="margin-right: auto;">
-                                <input type="text" class="form-control input-cus" placeholder="Nama Belakang" aria-label="Nama belakang">
+                                <input type="text" class="form-control input-cus" id="namaBelakang" placeholder="Nama Belakang" aria-label="Nama belakang">
                             </div>
                             
                             <div class="d-grid gap-2 col-10 mx-auto">
-                                <input type="email" class="form-control input-cus" placeholder="Email" aria-label="Email">
-                                <input type="password" class="form-control input-cus" placeholder="Password" aria-label="Password">
-                                <input type="password" class="form-control input-cus" placeholder="Ulangi Password" aria-label="Ulangi Password">
+                                <input type="email" class="form-control input-cus" id="emailDaftar" placeholder="Email" aria-label="Email">
+                                <input type="password" class="form-control input-cus" id="passDaftar"placeholder="Password" aria-label="Password">
+                                <input type="password" class="form-control input-cus" id="ulangPass" placeholder="Ulangi Password" aria-label="Ulangi Password">
                             </div>
                         </div>
                         
@@ -84,7 +84,7 @@
                     <!--alternatif register-->
                     <span style="color: #A5B2C2;">Atau</span>
                     <div class="d-grid gap-2 col-10 mx-auto" style="padding: 0px 12px;">
-                        <button type="submit" class="btn btn-danger" style="background: #E75062;">
+                        <button type="button" class="btn btn-danger" style="background: #E75062;">
                             <i class="fab fa-google-plus" style="font-size: 15pt;"></i> Masuk Melalui google
                         </button>
                     </div>
