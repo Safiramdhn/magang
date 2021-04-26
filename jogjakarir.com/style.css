@@ -7,8 +7,7 @@
     margin-bottom: 30px;
 }
 
-a{
-    
+a{ 
     color:black !important;
 }
 
@@ -20,38 +19,33 @@ span{
     padding: 10px;
 }
 
-/*overide bootstrap .nav-item*/
-.nav-item{
-    padding-left: 30px;
-}
-
-/*overide bootstrap .container-fluid*/
-.container-fluid{
-    padding: 0px 20px;
-}
-
 /*overide and custom bootstrap .card*/
 .card{
     border: none;
 }
 
+/*custom footer*/
 footer{
     background-color: #607EED;
     color: white;
 }
 
+/*change border color*/
 form input{
     border-color: #A5B2C2 !important;
 }
 
+/*custom margin for row*/
 .row{
     margin: 0px !important;
 }
 
+/*change border*/
 select{
     border: none !important;
 }
 
+/*create content with img background*/
 .bg-header{
     width: 100%;
     height: 100%;
@@ -60,6 +54,7 @@ select{
     background-size: cover;
 }
 
+/*custom card for loker*/
 .loker-card{
     padding: 5px 0px !important;
     width: 25rem; 
@@ -68,12 +63,14 @@ select{
     
 }
 
+/*custom btn*/
 .btn-cus{
     background: linear-gradient(147.76deg, #7DABFF 16.98%, #528FFF 82.47%) !important;
     border-radius: 4px !important;
     border: none;
 }
 
+/*override drowdown from bootstraps*/
 .dropdown-menu[data-bs-popper]{
     left: auto !important;
     right: 5px !important;
@@ -81,6 +78,7 @@ select{
 
 }
 
+/*mengatur ukuran img*/
 .img-cus{
     width: 160px;
     height: 80px;
@@ -91,20 +89,24 @@ select{
     height: 80px;
 }
 
+/*custom card untuk search di landing page*/
 .card-cus{
     margin-top: -125px;
     background-color: transparent;
     padding: 20px 50px !important;
 }
 
+/*custom font color on rigth navbar*/
 .rigthnav-cus{
     color: white !important;
 }
 
+/*create background color while hover*/
 .dropdown-item:hover{
     background-color: rgb(0, 0, 0,0.35) !important;
 }
 
+/*custom dropdown menu*/
 .dropdown-menu-cus{
     background-color: rgb(255,255,255, 0.9) !important;
     width: 100% !important;
@@ -115,11 +117,13 @@ h1{
     padding: 200px 10px;
 }
 
+/*change color while hover, override bootstrap*/
 .btn-outline-dark:hover{
     background-color: #528FFF !important;
     border-color: #fff !important;
 }
 
+/*override row in md-10*/
 .col-md-10 .row{
     height: 25px;
     width: 250px;
@@ -129,7 +133,11 @@ h1{
     margin-top: -50px;
 }
 
+.con-footer{
+    padding: 30px 0px 30px 0px !important;
+}
 
+/*custom small devices*/
 @media (min-width: 319px) and (max-width: 340px){
     .col-sm-5{
         flex: 0 0 auto;
@@ -245,6 +253,7 @@ h1{
     }
 }
 
+/*custom small devices*/
 @media (min-width: 350px) and (max-width: 576px) {
     .col-sm-6{
         flex: 0 0 auto;
@@ -448,6 +457,7 @@ h1{
     }
 }
 
+/*custom large deivices*/
 @media (min-width: 992px){
     .md-3-cus{
         width: 19%;
@@ -481,6 +491,10 @@ h1{
 
 /*XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1441px) and (max-width: 3000px){
+    .con-footer{
+        padding: 30px 200px 30px 200px !important;
+    }
+
     .card{
         padding: 20px 800px;
     }
@@ -519,6 +533,7 @@ h1{
     
 }
 
+/*responsive carousel*/
 /* medium - display 2  */
 @media (min-width: 768px) {
     .carousel-inner .carousel-item-right.active,
@@ -555,6 +570,7 @@ h1{
     }
 }
 
+/*custom set carousel*/
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
 .carousel-inner .carousel-item-prev {
