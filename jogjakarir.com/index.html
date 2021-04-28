@@ -43,9 +43,19 @@
                                 <a class="nav-link" href="#">Cari Kandidat</a>
                             </li>
                         </ul>
-                        <a class="nav-link rigthnav-cus" href="login.html">Masuk</a>
-                        <a class="nav-link rigthnav-cus" href="daftar.html">Register</a>
-                        <a href="#"><button class="btn btn-outline-light btnnav" type="button">Perusahaan</button></a>
+                        <div>
+                            <ul class="navbar-nav">    
+                                <li class="nav-item">
+                                    <a class="nav-link rigthnav-cus" href="login.html">Masuk</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link rigthnav-cus" href="daftar.html">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="home-company.html"><button class="btn btn-outline-light btnnav" type="button">Perusahaan</button></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -83,13 +93,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-select">
+                                <div class="col-md-3 col-select border-start">
                                     <div class="row">
                                         <div class="col-md-2 md-2-cus" style="padding-top: 4px;">
                                             <i class="fas fa-map-marker-alt" style="color: #808D9D; font-size: 20pt;"></i>  
                                         </div>
                                         <div class="col-md-10">
-                                            <select class="form-select" aria-label="Default select example" aria-placeholder="Lokasi">
+                                            <select class="form-select" id="lokasi">
                                                 <option selected>Lokasi</option>
                                                 <option value="1">Yogyakarta</option>
                                                 <option value="2">Sleman</option>
@@ -100,35 +110,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-select">
+                                <div class="col-md-3 col-select border-start">
                                     <div class="row">
                                         <div class="col-md-2 md-2-cus" style="padding-top: 4px;">
                                             <i class="fas fa-graduation-cap" style="color: #808D9D; font-size: 20pt;"></i>  
                                         </div>
                                         <div class="col-md-10">
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select class="form-select" id="pendidikan">
                                                 <option selected>Pendidikan</option>
-                                                <option value="1">Umum</option>
-                                                <option value="2">SMP</option>
-                                                <option value="3">SMA</option>
-                                                <option value="4">D3/S1</option>
-                                                <option value="5">S2</option>
+                                                <option value="1">SMA/Sederajat</option>
+                                                <option value="2">D1/D2/D3</option>
+                                                <option value="3">D4/S1</option>
+                                                <option value="4">Umum</option>                                            
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 col-select">
+                                <div class="col-md-3 col-select border-start">
                                     <div class="row">
                                         <div class="col-md-2 md-2-cus" style="padding-top: 4px;">
                                             <i class="fas fa-clock" style="color: #808D9D; font-size: 20pt;"></i>  
                                         </div>
                                         <div class="col-md-10">
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select class="form-select" id="tipePekerjaan">
                                                 <option selected>Tipe pekerjaan</option>
-                                                <option value="1">Penuh waktu</option>
-                                                <option value="2">Paruh waktu</option>
-                                                <option value="3">Pekerjaan lepas</option>
-                                                <option value="4">Magang</option>
+                                                <option value="1">Full time</option>
+                                                <option value="2">Part time</option>
+                                                <option value="3">Internship</option>
                                             </select>
                                         </div>
                                     </div>
@@ -232,7 +240,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -263,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -294,7 +302,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -325,7 +333,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -356,7 +364,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -387,7 +395,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-2 md-2-cus">
-                                    <a href="#"><i class="far fa-bookmark"></i></a>
+                                    <button class="btn" type="button"><i class="far fa-bookmark"></i></button>
                                 </div>
                             </div>
                             <div class="row row-loker" style="font-size: small; height: 50px;">
@@ -443,7 +451,7 @@
 
         <!--footer-->
         <div style="background: linear-gradient(147.76deg, #7DABFF 16.98%, #528FFF 82.47%);">
-            <div class="container" style="padding: 30px 0px 30px 0px;">
+            <div class="container con-footer">
                 <div class=" row" style="margin: 0px; color: white">
                     <!--footer navigation-->
                     <div class="col-lg-4 col-4-cus mb-3">
